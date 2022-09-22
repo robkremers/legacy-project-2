@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chrome-modheader": "^1.0.15",
+    "firefox-modheader": "^1.0.11"
+  }
+}

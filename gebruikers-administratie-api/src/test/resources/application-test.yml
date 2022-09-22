@@ -1,0 +1,11 @@
+server:
+  port: 2022
+
+spring:
+  ldap:
+    base: o=suwi,c=nl
+    hosts: localhost
+    port: 636
+    poolSize: 1
+    username: cn=sa_useradmin,o=special,c=nl
+    password: vagrant

@@ -1,0 +1,2008 @@
+dn: ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: DUO
+entryUUID: de40e445-fbc4-3058-a7ea-f03b2940a0e1
+aci: (target="ldap:///ou=DUO,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=DUO,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=DUO,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=DUO,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=DUO,o=suwi,c=nl"; )
+
+dn: cn=DUO Gebruiker,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: gebruiker_duo@bkwi.nl
+sn: Gebruiker
+cn: DUO Gebruiker
+givenName: DUO
+businessCategory: BASIS_DUO
+businessCategory: GEBRUIKER_DUO
+userPassword: {SSHA}hBhP8lMEFcPuf58MT4SITCG3KjEkp5sH3utOHg==
+uid: gebruiker_duo
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1e740797-d8a7-3e3d-9220-84d1c7ac79ea
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=DUO Beheerder,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: beheerder_duo@bkwi.nl
+sn: Beheerder
+cn: DUO Beheerder
+givenName: DUO
+businessCategory: BASIS_DUO
+businessCategory: BEHEERDER_DUO
+userPassword: {SSHA}/18Uhjok0tCknGEAJ/y22ZbVFlckQL85ksUrhg==
+uid: beheerder_duo
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d2aacf71-5acf-3fb9-a61a-9af871bfb217
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: UWV
+entryUUID: 93bebdf2-ca35-33d9-8b94-8f3876e50ede
+aci: (target="ldap:///ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=UWV Gebruiker,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: gebruiker_uwv@bkwi.nl
+sn: Gebruiker
+cn: UWV Gebruiker
+givenName: UWV
+businessCategory: BASIS_UWV
+businessCategory: GEBRUIKER_UWV
+userPassword: {SSHA}H9taYuPtYsM/BgOf+j2BwvPDSqkZXdZfA1yNmA==
+uid: gebruiker_uwv
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b6e89726-4ac8-328c-ae9a-e47a0f35bc6c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=UWV Beheerder,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: beheerder_uwv@bkwi.nl
+sn: Beheerder
+cn: UWV Beheerder
+givenName: UWV
+businessCategory: BASIS_UWV
+businessCategory: BEHEERDER_UWV
+userPassword: {SSHA}H4JpAFE0CYhvAyBmUoLM/L1nie5+g7dqGiOKhQ==
+uid: beheerder_uwv
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 01474dfe-0d7c-3986-9405-d78a8042a5f5
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Bezwaren,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Bezwaren
+entryUUID: c5db4599-fd6a-3393-8442-a7d4c33a4d46
+aci: (target="ldap:///ou=Bezwaren,ou=DUO,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=Bezwaren,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Bezwaren,ou=DUO,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=Bezwaren,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Bezwaren,ou=DUO,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=Bezwaren,ou=DUO,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Bezwaren,ou=DUO,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=Bezwaren,ou=DUO,o=suwi,c=nl"; )
+
+dn: cn=Henk Penk,ou=Bezwaren,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: duo_henk@bkwi.nl
+sn: Penk
+cn: Henk Penk
+givenName: Henk
+businessCategory: BASIS_DUO
+businessCategory: FR2
+userPassword: {SSHA}CTFIwZhRUC/Dg/kAhijoMHhy4WhaEZqcJ719cg==
+uid: duo_henk
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 44579610-faa7-3538-bd42-b2b4391ca71b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Marie Pie,ou=Bezwaren,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: duo_marie@bkwi.nl
+sn: Pie
+cn: Marie Pie
+givenName: Marie
+businessCategory: BASIS_DUO
+businessCategory: FR1
+userPassword: {SSHA}58Xou6Zz7k4FGcvUfznUT2DgBQo7fENqpOPi4A==
+uid: duo_marie
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 2304b2ac-853c-3198-bb87-63c81c47ec6d
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Meneer DUO,ou=Bezwaren,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: duo@bkwi.nl
+sn: DUO
+cn: Meneer DUO
+givenName: Meneer
+businessCategory: BASIS_DUO
+businessCategory: FR1
+businessCategory: FR2
+userPassword: {SSHA}wBhK0bne73u8HiJIwCG9dOg6gdcPlUNcKHzovQ==
+uid: duo
+pwdChangedTime: 20201110090807.654Z
+entryUUID: f81f93d4-b1a8-3509-987a-63019c1e96a4
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Upgrade,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Upgrade
+entryUUID: 71eefa3a-a4f4-3ca8-b1e1-48297944838b
+aci: (target="ldap:///ou=Upgrade,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=Upgrade,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Upgrade,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=Upgrade,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Upgrade,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=Upgrade,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=Upgrade,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=Upgrade,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Siete Wietske,ou=Upgrade,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_siete@bkwi.nl
+sn: Wietske
+cn: Siete Wietske
+givenName: Siete
+businessCategory: BASIS_UWV
+businessCategory: FR4
+userPassword: {SSHA}yCmsFVO8RyPTC0hRAtuQDvD47Z5cRDVOcASItA==
+uid: uwv_siete
+pwdChangedTime: 20201110090807.654Z
+entryUUID: c23dd2f6-2e25-36e6-8af6-1f35caa2c8d1
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Lisette Janssen,ou=Upgrade,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_lisette@bkwi.nl
+sn: Janssen
+cn: Lisette Janssen
+givenName: Lisette
+businessCategory: BASIS_UWV
+businessCategory: FR3
+userPassword: {SSHA}DE2ktdAf7UHzTDz3ZCmXOkm/bLcgz8T9bl+mjw==
+uid: uwv_lisette
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 2c31e057-af36-3de2-93fe-14bec7059411
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 0
+entryUUID: b8550967-57b1-3596-8599-1a4dd21033ca
+aci: (target="ldap:///ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672030,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_00@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}4w8KBhKRssfStQmv8E1w+wCpORaM+2Q3XKwmmw==
+uid: uwv_gebruiker_00
+pwdChangedTime: 20201110090807.654Z
+entryUUID: cfbe3b91-3e4a-3df8-8320-dbd2cff267f7
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDAsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_01@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}PSdU6mRvCSB+h0Qel5ACcuzgyybw5jbB80UGQw==
+uid: uwv_gebruiker_01
+pwdChangedTime: 20201110090807.654Z
+entryUUID: f53ab845-6526-32e5-b776-292708495385
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker02 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_02@bkwi.nl
+sn: UWVer
+cn: Gebruiker02 UWVer
+givenName: Gebruiker02
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}YTupDlffeMTj3ePVi3qQRhEIWH4D6FSoFvhFMg==
+uid: uwv_gebruiker_02
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 20c66304-56c3-315f-820e-2a9117bd8038
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker03 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_03@bkwi.nl
+sn: UWVer
+cn: Gebruiker03 UWVer
+givenName: Gebruiker03
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Cou9Cd8iOqgA8lrPAiBzdqF6D+cOHcrvCiaFSA==
+uid: uwv_gebruiker_03
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 0a89016e-501f-3a70-82f3-7cc919e2a898
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker04 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_04@bkwi.nl
+sn: UWVer
+cn: Gebruiker04 UWVer
+givenName: Gebruiker04
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}rpLBVFWMeZnh11/ntMjXX39w9o03OT+RH1m92g==
+uid: uwv_gebruiker_04
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3d52fbed-fc03-34fd-8d4e-2189f2d25db0
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker05 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_05@bkwi.nl
+sn: UWVer
+cn: Gebruiker05 UWVer
+givenName: Gebruiker05
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Wx0h+ynkEh5CX8aYPLEmzwssJlR7wnl4kRU9vg==
+uid: uwv_gebruiker_05
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 293ab7d4-d23a-3597-9d8e-770f185da921
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker06 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_06@bkwi.nl
+sn: UWVer
+cn: Gebruiker06 UWVer
+givenName: Gebruiker06
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}JjZKn/vLr/HwACaVe29pRmhD0+28ip3Qiji56w==
+uid: uwv_gebruiker_06
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 6a94222d-da00-3792-acac-488d75e57411
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker07 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_07@bkwi.nl
+sn: UWVer
+cn: Gebruiker07 UWVer
+givenName: Gebruiker07
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}g2Hrnj2uhCg1U5qrwJxN6GmSTeVpjZg4cBYEsw==
+uid: uwv_gebruiker_07
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 19e61e11-24f8-397e-80cb-7aa4d48c2b22
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker08 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_08@bkwi.nl
+sn: UWVer
+cn: Gebruiker08 UWVer
+givenName: Gebruiker08
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}gUhdplxmZgVoHu/r6gV/3RpzFSgNVNA9R5pZbg==
+uid: uwv_gebruiker_08
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 34a4f085-7e37-386e-8e23-922fbdd02a96
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker09 UWVer,ou=Afdeling 0,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_09@bkwi.nl
+sn: UWVer
+cn: Gebruiker09 UWVer
+givenName: Gebruiker09
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}lV1Ik88PAgtYN2nvfJTEMh987izSkyVpFy6wIA==
+uid: uwv_gebruiker_09
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b9f61d1b-25fc-3cac-a436-9278f6ef11b8
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 1
+entryUUID: 91b2d78e-5c42-37ff-b8c0-0a917f16ad7c
+aci: (target="ldap:///ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672031,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_10@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}7K3aRCJHHYJG/jjBF3RmC9xmfNHvAJw24kkVMQ==
+uid: uwv_gebruiker_10
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 5a14c8df-7225-3b65-8264-ea4f4e3520e6
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDEsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_11@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}bnGE2SsmpZ7ZdSsH6hqEnT/POhiZTIOlbOWo+g==
+uid: uwv_gebruiker_11
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1526e447-46d4-3b97-a7ab-1ef019d3d573
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker12 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_12@bkwi.nl
+sn: UWVer
+cn: Gebruiker12 UWVer
+givenName: Gebruiker12
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}H0neJcCzUjavV3l9k1lNvkZBmGsGTn2WOzSRkA==
+uid: uwv_gebruiker_12
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3e923f6c-5524-361b-b8a7-ecc6131bcf4d
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker13 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_13@bkwi.nl
+sn: UWVer
+cn: Gebruiker13 UWVer
+givenName: Gebruiker13
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}7QJpIvJNwWuW+ufvdCY1840Cf2yl3cW1oce7Tw==
+uid: uwv_gebruiker_13
+pwdChangedTime: 20201110090807.654Z
+entryUUID: fecc3a26-7352-3fad-a9d0-4eac58e29377
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker14 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_14@bkwi.nl
+sn: UWVer
+cn: Gebruiker14 UWVer
+givenName: Gebruiker14
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}WRsFyAHLBd3JU4iO57K9PtyID3WeSW/xqdgksw==
+uid: uwv_gebruiker_14
+pwdChangedTime: 20201110090807.654Z
+entryUUID: c5585abf-75c0-38b5-bda6-249c10d3374a
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker15 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_15@bkwi.nl
+sn: UWVer
+cn: Gebruiker15 UWVer
+givenName: Gebruiker15
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}06skh0CrWV9Yw85es09BVK1iT/RD0F4OtCYWrw==
+uid: uwv_gebruiker_15
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ab94e6a1-b3f2-3142-a7b9-1540317c33e8
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker16 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_16@bkwi.nl
+sn: UWVer
+cn: Gebruiker16 UWVer
+givenName: Gebruiker16
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}3WHkawu1kyRJu5tOrm1Ecofd7FRdbQ/nznielg==
+uid: uwv_gebruiker_16
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d13b479c-5793-3649-9d16-c57bc164ab93
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker17 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_17@bkwi.nl
+sn: UWVer
+cn: Gebruiker17 UWVer
+givenName: Gebruiker17
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}CYKtBjPDAOfAVxOtyFGm+BWT4lrT8sjfjsP+Xg==
+uid: uwv_gebruiker_17
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 79b2b118-e950-3ce1-a5dd-3716a6d5e839
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker18 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_18@bkwi.nl
+sn: UWVer
+cn: Gebruiker18 UWVer
+givenName: Gebruiker18
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}UnShPNTE+xL8QlUVJwkD6xFk7yVrwd0y5xr/3g==
+uid: uwv_gebruiker_18
+pwdChangedTime: 20201110090807.654Z
+entryUUID: aa608847-967e-35a3-9955-502ec81631a4
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker19 UWVer,ou=Afdeling 1,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_19@bkwi.nl
+sn: UWVer
+cn: Gebruiker19 UWVer
+givenName: Gebruiker19
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}px2H7eSXgB2aFx3HtM0UyJYUpj5fNTU74S9gCg==
+uid: uwv_gebruiker_19
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 986601ff-f4b4-35e8-8910-5f506591a578
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 2
+entryUUID: 7ce2d322-eaff-3b0b-be1a-56de878be4c5
+aci: (target="ldap:///ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672032,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_20@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}nImatDmD9nYuVpJ0d9f1s2LeavT5h4jHYH7ckg==
+uid: uwv_gebruiker_20
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 0bf3642b-0578-3835-b4fe-28b9abcdf78b
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDIsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_21@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}cp+0pLGJ8W9qwwdsNZmy7d7JF0d2rFt5ysulUg==
+uid: uwv_gebruiker_21
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1c975f17-e01d-3c52-9d92-5e4a979cdd46
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker22 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_22@bkwi.nl
+sn: UWVer
+cn: Gebruiker22 UWVer
+givenName: Gebruiker22
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}U+H3ixUml9Zis29wkXUyyvcv2k7HGuHjWtLzqg==
+uid: uwv_gebruiker_22
+pwdChangedTime: 20201110090807.654Z
+entryUUID: e8626019-6648-3660-89d0-4b9dac0efc0b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker23 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_23@bkwi.nl
+sn: UWVer
+cn: Gebruiker23 UWVer
+givenName: Gebruiker23
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}UJ6KnFg2SToCh9MV0EH3+BMjHBALlKPQ8YR5wQ==
+uid: uwv_gebruiker_23
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 63c15f20-4f1e-3d61-9021-6e7e20413b62
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker24 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_24@bkwi.nl
+sn: UWVer
+cn: Gebruiker24 UWVer
+givenName: Gebruiker24
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}wXefzoSNRQIgsj4C1akCMzMQuRfHFzZPqvE6FQ==
+uid: uwv_gebruiker_24
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1cdef0f9-40c9-3ab1-829a-c9f9f66649c6
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker25 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_25@bkwi.nl
+sn: UWVer
+cn: Gebruiker25 UWVer
+givenName: Gebruiker25
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}RH6lJ0hB5o+73VjuXcZpFKXalUxX42Vh0p1mgg==
+uid: uwv_gebruiker_25
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 581518c2-0542-3162-9a69-13c4f4714abd
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker26 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_26@bkwi.nl
+sn: UWVer
+cn: Gebruiker26 UWVer
+givenName: Gebruiker26
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Xrmyl4M4GR9LLLRWmuUPEc983kFg8fXM67VfBQ==
+uid: uwv_gebruiker_26
+pwdChangedTime: 20201110090807.654Z
+entryUUID: a24c9a25-5327-32b7-b04c-626d82b61a2d
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker27 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_27@bkwi.nl
+sn: UWVer
+cn: Gebruiker27 UWVer
+givenName: Gebruiker27
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}xJRX0E+p9osNmavAx0FMHYHi3WoDx0MhBJtiJQ==
+uid: uwv_gebruiker_27
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d444e0ff-7616-3cae-ac18-072d3978e1e1
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker28 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_28@bkwi.nl
+sn: UWVer
+cn: Gebruiker28 UWVer
+givenName: Gebruiker28
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}8NJPRMjkQPBoM/NYWeW6eOYTvyLZ20Pg7JhrvA==
+uid: uwv_gebruiker_28
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 0488b23d-8377-3499-ab0e-04dcccba77ca
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker29 UWVer,ou=Afdeling 2,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_29@bkwi.nl
+sn: UWVer
+cn: Gebruiker29 UWVer
+givenName: Gebruiker29
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}6+zHelOdXa3ABVid2x4Aq1XUMR7dbNE7jErCIw==
+uid: uwv_gebruiker_29
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 605529d2-aaf0-3be7-958c-f8ba6b2cd5d6
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 3
+entryUUID: 343f0d67-4213-3245-b7b3-30a9907fbae3
+aci: (target="ldap:///ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672033,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_30@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}fdFLA7FWHeg87SYuYnMmf1qqAxnx9ydsWEwmGw==
+uid: uwv_gebruiker_30
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b53d1c95-d460-38fa-ac79-7e38c7dec734
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDMsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_31@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}zd39MMXWBdJjl+8m+IapDCf9O5G1GPbS7b0YCw==
+uid: uwv_gebruiker_31
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 02260a2f-304f-3437-af05-34bd9f3ed320
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker32 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_32@bkwi.nl
+sn: UWVer
+cn: Gebruiker32 UWVer
+givenName: Gebruiker32
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}oh2gYtH87phTWUrWUPLIcwOjvNVDowZLy6hu7A==
+uid: uwv_gebruiker_32
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3da39366-04a5-3740-a91f-e5efb19fcfda
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker33 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_33@bkwi.nl
+sn: UWVer
+cn: Gebruiker33 UWVer
+givenName: Gebruiker33
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}wiAcJ5LGErosy7t1yHULo0Kwzl+HwNM2SlgcUQ==
+uid: uwv_gebruiker_33
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 5d2d2375-0976-395e-a394-2e397aa29353
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker34 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_34@bkwi.nl
+sn: UWVer
+cn: Gebruiker34 UWVer
+givenName: Gebruiker34
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}wmwDyG5lqZhm39E6CrE9EFLd27xLKQWjRi8ocw==
+uid: uwv_gebruiker_34
+pwdChangedTime: 20201110090807.654Z
+entryUUID: f0b11a63-46c8-39d3-a0dd-24b7dc42e9db
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker35 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_35@bkwi.nl
+sn: UWVer
+cn: Gebruiker35 UWVer
+givenName: Gebruiker35
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}YB2kST0eH3TkBpTRRhzjQ9yg5IM0uHDoCKIYSA==
+uid: uwv_gebruiker_35
+pwdChangedTime: 20201110090807.654Z
+entryUUID: c446ef15-0956-302e-ac12-97308b9b8b1f
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker36 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_36@bkwi.nl
+sn: UWVer
+cn: Gebruiker36 UWVer
+givenName: Gebruiker36
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}1twLY1RfaVJRzLUlz7iyH24LiF49ONaReT+vzA==
+uid: uwv_gebruiker_36
+pwdChangedTime: 20201110090807.654Z
+entryUUID: fb5983ba-85c0-3c62-a880-72959f231433
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker37 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_37@bkwi.nl
+sn: UWVer
+cn: Gebruiker37 UWVer
+givenName: Gebruiker37
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}44Yyxf2aPuYBWLjJ8x+12349pt115KPssDI3NA==
+uid: uwv_gebruiker_37
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 6d403da5-d208-3037-8eec-858b3070001a
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker38 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_38@bkwi.nl
+sn: UWVer
+cn: Gebruiker38 UWVer
+givenName: Gebruiker38
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}fkT3TA13Kwd2QUgkyTfg2PljZMQRTxgVRO5jig==
+uid: uwv_gebruiker_38
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 65bdfbbb-dbd1-369a-8357-e2d117ef2e2f
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker39 UWVer,ou=Afdeling 3,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_39@bkwi.nl
+sn: UWVer
+cn: Gebruiker39 UWVer
+givenName: Gebruiker39
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}fJxqiBQUJX4/NJK0ByMFUFmxF+4MqZwiGdVS8w==
+uid: uwv_gebruiker_39
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d1a89159-8927-30a4-8d77-51b02ea6eaf3
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 4
+entryUUID: c1696400-59bf-3ae0-ac46-143206105a67
+aci: (target="ldap:///ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672034,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_40@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}H2VbgnZefV8S0g2781GhQhLdK63ieOS6e0AtpA==
+uid: uwv_gebruiker_40
+pwdChangedTime: 20201110090807.654Z
+entryUUID: a2249d74-ca3d-3bb8-a525-60efc8f5cebe
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDQsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_41@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}5e2f4DDesKB+FGRyf+SGl2Dkqvo7Bj+RxUmWbg==
+uid: uwv_gebruiker_41
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 84aa956f-5e9d-3866-a1bb-3d5e80108f6c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker42 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_42@bkwi.nl
+sn: UWVer
+cn: Gebruiker42 UWVer
+givenName: Gebruiker42
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}RIdFa8Dh4UfKQpK7wAHvUyhQLn146TyR6c2uew==
+uid: uwv_gebruiker_42
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 5b71ee37-45c9-38e2-9f51-4cb16302fad0
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker43 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_43@bkwi.nl
+sn: UWVer
+cn: Gebruiker43 UWVer
+givenName: Gebruiker43
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}93i5OxSrXOOfB6N4HJnZuJsxftF6mR+1i0ta9Q==
+uid: uwv_gebruiker_43
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b5ed9a65-5e4d-3617-b4cc-be15b2e3f342
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker44 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_44@bkwi.nl
+sn: UWVer
+cn: Gebruiker44 UWVer
+givenName: Gebruiker44
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}TSzrYjxa2Pr4JbkpRbp/mZTKNZ0jT/DNlxAH2w==
+uid: uwv_gebruiker_44
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 07e7d791-a297-32f7-a55e-70b0b67507f2
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker45 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_45@bkwi.nl
+sn: UWVer
+cn: Gebruiker45 UWVer
+givenName: Gebruiker45
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}xD7hOEOCpONHJB10QXZZht15qtRjdXL9drrMsQ==
+uid: uwv_gebruiker_45
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 52e1ecbd-b850-3f93-aaa2-e05f66867340
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker46 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_46@bkwi.nl
+sn: UWVer
+cn: Gebruiker46 UWVer
+givenName: Gebruiker46
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}C75wMM2xdlBKY1ry9mn0SFMU+PrK7X/sTuSMug==
+uid: uwv_gebruiker_46
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b53e71a2-e5a3-33c2-9b6c-7f0e2b33ceb2
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker47 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_47@bkwi.nl
+sn: UWVer
+cn: Gebruiker47 UWVer
+givenName: Gebruiker47
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}1My/HVbdE9XB4rpizQWSa+jOb6nwBPtD7RAlzA==
+uid: uwv_gebruiker_47
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 9f81ef7c-1686-3468-bd31-8ed1ad3666d4
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker48 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_48@bkwi.nl
+sn: UWVer
+cn: Gebruiker48 UWVer
+givenName: Gebruiker48
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}wKfLMwl3mIH2NNaii+fhBqZIY7tC1+MBWfpm+w==
+uid: uwv_gebruiker_48
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ed6d40ab-0ddf-3dc2-940e-6bacae8ed210
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker49 UWVer,ou=Afdeling 4,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_49@bkwi.nl
+sn: UWVer
+cn: Gebruiker49 UWVer
+givenName: Gebruiker49
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}gZlnW3hHxfJ7gav1W8az1XkgJyDpbToCE4fIFg==
+uid: uwv_gebruiker_49
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 59139701-72d9-38aa-9f9a-e0d22494758e
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 5
+entryUUID: 99d604c5-0c91-3f74-8862-1618b976031c
+aci: (target="ldap:///ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672035,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_50@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}0VlGXlAt8A/5z6Klpc36lMCXbZLk1OnXjkVAAQ==
+uid: uwv_gebruiker_50
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ca274451-ca3a-3980-942f-8d60b48eca9a
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDUsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_51@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}959FOGpfhCrO0cLvRsKhsfe285qXJv3ncIgCdw==
+uid: uwv_gebruiker_51
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 0da97600-2404-33cb-a39e-0b3b06643f0a
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker52 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_52@bkwi.nl
+sn: UWVer
+cn: Gebruiker52 UWVer
+givenName: Gebruiker52
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}2FDTdHx7WU69USWuqQOy4WbH4z5Z1qDoj6IISA==
+uid: uwv_gebruiker_52
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 01e9f0da-4ccd-3166-af0a-c6a6c0f9f402
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker53 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_53@bkwi.nl
+sn: UWVer
+cn: Gebruiker53 UWVer
+givenName: Gebruiker53
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}2x+U6lTwm94PQBqzmGhk7Y88DRy9sj/M0F8cwQ==
+uid: uwv_gebruiker_53
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1c80673c-3aef-3048-b718-f8c21389028e
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker54 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_54@bkwi.nl
+sn: UWVer
+cn: Gebruiker54 UWVer
+givenName: Gebruiker54
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}70WB54WY+6YyVk5GCSVYlSKC2la3+QuHTUDhWw==
+uid: uwv_gebruiker_54
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 7b63000b-58f7-3806-a61b-1b306962ef38
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker55 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_55@bkwi.nl
+sn: UWVer
+cn: Gebruiker55 UWVer
+givenName: Gebruiker55
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}jlHh9GsUWRgqY2z8dYbvcoFEUE3RgHWyzYxIXQ==
+uid: uwv_gebruiker_55
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d869f6c3-3824-3eca-b3b8-9f02e9187560
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker56 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_56@bkwi.nl
+sn: UWVer
+cn: Gebruiker56 UWVer
+givenName: Gebruiker56
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}ldklWAC5X5T6xdz9MqcwhCLXk5fIu210az3ppQ==
+uid: uwv_gebruiker_56
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1791ce98-d1f3-3dfa-9a14-95db800bedac
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker57 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_57@bkwi.nl
+sn: UWVer
+cn: Gebruiker57 UWVer
+givenName: Gebruiker57
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}+3TNUBPZMwll+e37WinauCTBKWhF+H2ORvuJOQ==
+uid: uwv_gebruiker_57
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 8ccfc346-a8cd-3fd5-8104-b44716b8cf38
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker58 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_58@bkwi.nl
+sn: UWVer
+cn: Gebruiker58 UWVer
+givenName: Gebruiker58
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}hlVWHiZ2upMuiYYtxrW2TGeXwFXKR2seLqqR4g==
+uid: uwv_gebruiker_58
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 4e94fdc0-2f35-3747-b9a1-3859525b725c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker59 UWVer,ou=Afdeling 5,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_59@bkwi.nl
+sn: UWVer
+cn: Gebruiker59 UWVer
+givenName: Gebruiker59
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Fyrvc6G19C1WsSs7xAmKHPIZizSSlqBb2EN+yQ==
+uid: uwv_gebruiker_59
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d77b03b4-434a-39aa-8725-8ae6b0226708
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 6
+entryUUID: 2de009eb-568f-3876-bfb7-191bdbe239f6
+aci: (target="ldap:///ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672036,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_60@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Btzqd4rc+3lNShWZJSlMVHQOBLfrkPOX6q/vPQ==
+uid: uwv_gebruiker_60
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b5428b5e-a753-3537-9680-5ddbf047417d
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDYsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_61@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}nIxRIv8bb40GUwHtLjkRKk2ST/K2OSLqXDwdJQ==
+uid: uwv_gebruiker_61
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 89f3bf25-2d11-32d1-9d7b-9633b7ea7f4c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker62 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_62@bkwi.nl
+sn: UWVer
+cn: Gebruiker62 UWVer
+givenName: Gebruiker62
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}f6slQ/gLCR3S0B2Bze3IflS0CIvYHl3C7/5OUQ==
+uid: uwv_gebruiker_62
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 9dcaedcc-5376-3842-84cf-e0315db4770b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker63 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_63@bkwi.nl
+sn: UWVer
+cn: Gebruiker63 UWVer
+givenName: Gebruiker63
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}WmZm6f4oF5YqUyp1U6fFvEwiZP84AFjb1Ch4Kw==
+uid: uwv_gebruiker_63
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 47212789-63b9-375f-aae2-9fd13ee17dbd
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker64 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_64@bkwi.nl
+sn: UWVer
+cn: Gebruiker64 UWVer
+givenName: Gebruiker64
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}CzwsjzHxn7L1tzG79+PiJQC/BaE7rSPWgRotYQ==
+uid: uwv_gebruiker_64
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 2091f3f4-57ba-352a-ad95-1960b468925e
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker65 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_65@bkwi.nl
+sn: UWVer
+cn: Gebruiker65 UWVer
+givenName: Gebruiker65
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}jpe/uQVJF8TpMXbhEGyvftBF8ElEPccKrXf2TQ==
+uid: uwv_gebruiker_65
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 4ac28d0b-b26e-3861-825f-6c5c7b6ae3d5
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker66 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_66@bkwi.nl
+sn: UWVer
+cn: Gebruiker66 UWVer
+givenName: Gebruiker66
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}FfPY4r8Q9zH12EQTQazssVakEDypJ1ROAgCZgg==
+uid: uwv_gebruiker_66
+pwdChangedTime: 20201110090807.654Z
+entryUUID: a99b0285-a4d2-339e-bdfa-8af6a5aed899
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker67 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_67@bkwi.nl
+sn: UWVer
+cn: Gebruiker67 UWVer
+givenName: Gebruiker67
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}jmaA24YsG5QWG+xoqZCdAFYkZJiw6yCNInM/yQ==
+uid: uwv_gebruiker_67
+pwdChangedTime: 20201110090807.654Z
+entryUUID: fdb42641-707b-32bf-aa4a-4b265c820dcb
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker68 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_68@bkwi.nl
+sn: UWVer
+cn: Gebruiker68 UWVer
+givenName: Gebruiker68
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}7avmhbi5GJQ7y8RfWJlmSRzCFvVIewUvQ+Kwkw==
+uid: uwv_gebruiker_68
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3137c237-aa7b-3d14-acf0-fc4a20e3ea19
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker69 UWVer,ou=Afdeling 6,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_69@bkwi.nl
+sn: UWVer
+cn: Gebruiker69 UWVer
+givenName: Gebruiker69
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}iRLFq4hEJ8jDRqMY5amlioP3XcAnH09ucadv0w==
+uid: uwv_gebruiker_69
+pwdChangedTime: 20201110090807.654Z
+entryUUID: f04c941a-a32f-3be6-9283-4653d2da4152
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 7
+entryUUID: e5787e61-e074-3356-bc79-2e57fc065802
+aci: (target="ldap:///ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672037,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_70@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}SUsYl9d35MjYUXIrz4CbxslebCLk5Us808rTpw==
+uid: uwv_gebruiker_70
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1e6fa2aa-300a-3799-a577-2c2bbda48966
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDcsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_71@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}wH1yx5e2vp+AVdphoggjNmdv2d9s2dkHXsIRQA==
+uid: uwv_gebruiker_71
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 1d88792b-0267-3471-ba9e-5a7824247456
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker72 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_72@bkwi.nl
+sn: UWVer
+cn: Gebruiker72 UWVer
+givenName: Gebruiker72
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}AuBUOFbfAtBaruyatsCqhAc4eNQk+BISqbPuRA==
+uid: uwv_gebruiker_72
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 824cf5d6-5ea8-3d63-b177-304d772f816d
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker73 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_73@bkwi.nl
+sn: UWVer
+cn: Gebruiker73 UWVer
+givenName: Gebruiker73
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}0c2wY1qpJ/0E9EgWz25Cm04NfPAbvG2x2sN0Ag==
+uid: uwv_gebruiker_73
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 8f9203a7-3125-33f3-ae58-585a757a5403
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker74 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_74@bkwi.nl
+sn: UWVer
+cn: Gebruiker74 UWVer
+givenName: Gebruiker74
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}PL+x/5/0ukkQ5F1Ea5OxIyffi149s1+4g8upNw==
+uid: uwv_gebruiker_74
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3fd1806e-220f-35ab-9afe-d36815a18acf
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker75 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_75@bkwi.nl
+sn: UWVer
+cn: Gebruiker75 UWVer
+givenName: Gebruiker75
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}T/yBzZkKozaZKqqNmaysitLbBFR1Q55U8iUU4w==
+uid: uwv_gebruiker_75
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 392d961b-3437-33da-9c8c-1a60f37b043b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker76 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_76@bkwi.nl
+sn: UWVer
+cn: Gebruiker76 UWVer
+givenName: Gebruiker76
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}IKqDXSofObG4Ytd2pqj8hkabIumazubnLjwJxg==
+uid: uwv_gebruiker_76
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 346f884e-06a0-3fce-bf25-b093e4ad1d73
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker77 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_77@bkwi.nl
+sn: UWVer
+cn: Gebruiker77 UWVer
+givenName: Gebruiker77
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}YRD2KKNVdwl/v/tzGLqJRbGpdwrjGCs9ftJpwA==
+uid: uwv_gebruiker_77
+pwdChangedTime: 20201110090807.654Z
+entryUUID: a69b70c7-eb50-378c-b9c9-29e56707605f
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker78 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_78@bkwi.nl
+sn: UWVer
+cn: Gebruiker78 UWVer
+givenName: Gebruiker78
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}QgRN73y2zpTF0qtzsUJvGhoQDZSed/SlSyaNMA==
+uid: uwv_gebruiker_78
+pwdChangedTime: 20201110090807.654Z
+entryUUID: decb4dcc-4382-3d66-b521-019966a4b861
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker79 UWVer,ou=Afdeling 7,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_79@bkwi.nl
+sn: UWVer
+cn: Gebruiker79 UWVer
+givenName: Gebruiker79
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}27hoUhjwY4vmAlqVbHdZqpedHICzDFHGq+DWNQ==
+uid: uwv_gebruiker_79
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ec7c6aec-1996-304a-8614-6e1b0f9fd583
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 8
+entryUUID: afd0704a-0d61-3def-80bf-07eaf1cf5350
+aci: (target="ldap:///ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672038,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_80@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}awGOkria7c8GmiwGOGSMyTKQzzCTl8DvjC8Nzg==
+uid: uwv_gebruiker_80
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 914fa63f-4a26-36fd-8ece-869bac6f976d
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDgsb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_81@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}atvYnG0bT/dFkHTIlTTjmoc0YA+EUjqgaaHV+g==
+uid: uwv_gebruiker_81
+pwdChangedTime: 20201110090807.654Z
+entryUUID: e4591e7c-1c24-3fa6-814b-4ed1b9c39a7e
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker82 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_82@bkwi.nl
+sn: UWVer
+cn: Gebruiker82 UWVer
+givenName: Gebruiker82
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}6pecpjyNHnrC0a4uX1JZHTvJg4Q/K6uFn61gOg==
+uid: uwv_gebruiker_82
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 4bf6ec12-74fb-3c64-a9c5-369a9f1fb0e0
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker83 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_83@bkwi.nl
+sn: UWVer
+cn: Gebruiker83 UWVer
+givenName: Gebruiker83
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}A23RkpI5tV255TG2JooOB90qA4ymJr8SJpZhyA==
+uid: uwv_gebruiker_83
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ca5d3e28-98ba-3329-abc6-f713d6a8f52e
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker84 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_84@bkwi.nl
+sn: UWVer
+cn: Gebruiker84 UWVer
+givenName: Gebruiker84
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}TAkbwSkE/iogxzQbjW78ha77Zau+J3o5kSZZuQ==
+uid: uwv_gebruiker_84
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 304a3588-7fe3-3aea-bd57-12b53e2cebb7
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker85 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_85@bkwi.nl
+sn: UWVer
+cn: Gebruiker85 UWVer
+givenName: Gebruiker85
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}yyQA/BXKhCd7rIlXkGK1gnk6+C0QakD4aPXjtA==
+uid: uwv_gebruiker_85
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 4a624117-8a34-3cca-bdfd-3027acec9b4c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker86 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_86@bkwi.nl
+sn: UWVer
+cn: Gebruiker86 UWVer
+givenName: Gebruiker86
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}+mtisv83kFMn8TZ5qOydwuhhlg5JOvX72uS01w==
+uid: uwv_gebruiker_86
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ad1c0cfd-4607-31a1-b62d-2869a821203d
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker87 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_87@bkwi.nl
+sn: UWVer
+cn: Gebruiker87 UWVer
+givenName: Gebruiker87
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}E9J1mjiuS+Ptp3ZnCgojmQnAfhyAeXwfnmGpKw==
+uid: uwv_gebruiker_87
+pwdChangedTime: 20201110090807.654Z
+entryUUID: b7994157-0260-3925-9134-63f1ed37286e
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker88 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_88@bkwi.nl
+sn: UWVer
+cn: Gebruiker88 UWVer
+givenName: Gebruiker88
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}S5QOdDoSwEHp/VmvK4RjgzMxLXIcX62tdCnLAA==
+uid: uwv_gebruiker_88
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 2cdcd960-0440-3be4-8885-5081ac6f534c
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker89 UWVer,ou=Afdeling 8,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_89@bkwi.nl
+sn: UWVer
+cn: Gebruiker89 UWVer
+givenName: Gebruiker89
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}+gr2jMoRzf3wveA9x5171D9vIChmyJdZDBlZCg==
+uid: uwv_gebruiker_89
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d8649301-1d45-35e3-8813-3e84c72a4a07
+ds-pwp-last-login-time: 20201110090807
+
+dn: ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: organizationalunit
+ou: Afdeling 9
+entryUUID: 4b436c3f-3385-32c2-be54-425d47038d2a
+aci: (target="ldap:///ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl")(targetattr="pwdFailureTime||userPassword||telephoneNumber||mail||ou||initials||aci||givenName||objectClass||dn||cn||facsimileTelephoneNumber||employeeNumber||uid||ds-pwp-last-login-time||ds-pwp-account-expiration-time||businessCategory||isMemberOf||sn||uniqueMember")(version 3.0; acl "Delegated read rights"; allow (search,compare,read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl")(targetattr="userPassword||telephoneNumber||mail||initials||aci||givenName||facsimileTelephoneNumber||employeeNumber||ds-pwp-account-expiration-time||businessCategory||ds-pwp-account-disabled||sn||uniqueMember")(version 3.0; acl "Delegated write and delete rights"; allow (write,delete) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl")(version 3.0; acl "Delegated add rights"; allow (add) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl"; )
+aci: (target="ldap:///ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl")(targetattr="*")(targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Delegated account status rights"; allow (read) groupdn="ldap:///cn=Administrators,ou=#416664656c696e672039,ou=UWV,o=suwi,c=nl"; )
+
+dn: cn=Andre UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_90@bkwi.nl
+sn: UWVer
+cn: Andre UWVer
+givenName: Andre
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}azir05BqdDdr7QH+w57L1UXn66u5Zh6MrraQ8A==
+uid: uwv_gebruiker_90
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 3f627f22-02e6-3a38-a347-9f4d0c38a2b5
+ds-pwp-last-login-time: 20201110090807
+
+dn:: Y249QW5kcsOpIFVXVmVyLG91PUFmZGVsaW5nIDksb3U9VVdWLG89c3V3aSxjPW5s
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_91@bkwi.nl
+sn: UWVer
+cn:: QW5kcsOpIFVXVmVy
+givenName:: QW5kcsOp
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}aiNonhqIgj8O8lYWBg1NpdFemKqWCc5Eqb4rBQ==
+uid: uwv_gebruiker_91
+pwdChangedTime: 20201110090807.654Z
+entryUUID: a3325ecf-3f66-37bb-86d2-72c485af86a9
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker92 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_92@bkwi.nl
+sn: UWVer
+cn: Gebruiker92 UWVer
+givenName: Gebruiker92
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}//EoZIlyX4Yr+f+KQKuKb95Sb81J2SF44TdD6A==
+uid: uwv_gebruiker_92
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 5d23a420-6fe3-388a-9f60-514ad0d9e13b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker93 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_93@bkwi.nl
+sn: UWVer
+cn: Gebruiker93 UWVer
+givenName: Gebruiker93
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}Rh8+xA6qDMR7BbrFCniZFIowx3AuB4+drNMVXA==
+uid: uwv_gebruiker_93
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 244a87cf-05f7-3d83-92a5-5f3ed0a992e6
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker94 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_94@bkwi.nl
+sn: UWVer
+cn: Gebruiker94 UWVer
+givenName: Gebruiker94
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}DWBI4V06qp/mPMcFjiUhAZOGir1pV6Ap4/cGyA==
+uid: uwv_gebruiker_94
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 53bb460f-c8c1-31da-b75a-bbce77cf04fb
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker95 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_95@bkwi.nl
+sn: UWVer
+cn: Gebruiker95 UWVer
+givenName: Gebruiker95
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}9325WSPDfDAAMPzphBX3JWQQxlSKYF6zeTf40Q==
+uid: uwv_gebruiker_95
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 915d94c4-3038-304a-b0c4-62a4715d711b
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker96 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_96@bkwi.nl
+sn: UWVer
+cn: Gebruiker96 UWVer
+givenName: Gebruiker96
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}jhv9g7BLNJc2ZuWseCujc4Hmooy0XCb/wCMMTA==
+uid: uwv_gebruiker_96
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 08dfc8f8-bada-3177-825f-8d1052130964
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker97 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_97@bkwi.nl
+sn: UWVer
+cn: Gebruiker97 UWVer
+givenName: Gebruiker97
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}9RSfxndxgCTJfhT90tQL54G8aZeDqNqLchAypA==
+uid: uwv_gebruiker_97
+pwdChangedTime: 20201110090807.654Z
+entryUUID: 69a96c5c-b7e3-3378-81f4-7b6324b3c266
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker98 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_98@bkwi.nl
+sn: UWVer
+cn: Gebruiker98 UWVer
+givenName: Gebruiker98
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}7t5Id1ww7Ktwk3MCT2XI02d279JcGkX1i3Caow==
+uid: uwv_gebruiker_98
+pwdChangedTime: 20201110090807.654Z
+entryUUID: ea142902-553d-3d7d-be60-f122644061ba
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Gebruiker99 UWVer,ou=Afdeling 9,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+mail: uwv_gebruiker_99@bkwi.nl
+sn: UWVer
+cn: Gebruiker99 UWVer
+givenName: Gebruiker99
+businessCategory: BASIS_UWV
+businessCategory: R4
+userPassword: {SSHA}P6ovisUsEuun78ffd6sh59bsoLmiqsFLg8mNrg==
+uid: uwv_gebruiker_99
+pwdChangedTime: 20201110090807.654Z
+entryUUID: d4081027-699b-31c1-b22f-d296155689e6
+ds-pwp-last-login-time: 20201110090807
+
+dn: cn=Administrators,ou=DUO,o=suwi,c=nl
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: cn=DUO Beheerder,ou=DUO,o=suwi,c=nl
+cn: Administrators
+entryUUID: f1a24866-f551-3afb-a4f7-fd0d9b6eb503
+
+dn: cn=Administrators,ou=UWV,o=suwi,c=nl
+objectClass: top
+objectClass: groupOfUniqueNames
+uniqueMember: cn=UWV Beheerder,ou=UWV,o=suwi,c=nl
+cn: Administrators
+entryUUID: 0f7dcd32-889d-377d-943e-c94a8be8aa1f
+

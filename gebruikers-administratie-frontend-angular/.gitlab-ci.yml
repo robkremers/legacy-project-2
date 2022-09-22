@@ -1,0 +1,8 @@
+include:
+  - project: "bkwi/beheer/infraops/ontwikkeltooling/gitlab-ci"
+    ref: "fix-npm-bdd"
+    file: "gitlab-ci-yml/docker-npm-deploy.yml"
+
+variables:
+  GRAAL_NATIVE_IMAGE: "true"
+  SUPPORT_LATEST_TAG: "true"

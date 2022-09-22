@@ -1,0 +1,167 @@
+<ng-container *ngIf="this.animate">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-container>
+
+<app-bkwi-panel id="gebruikerspanelTitleId" panelTitle="Persoonsgegevens">
+  <ng-container *ngIf="this.templateData$ | async as templateData">
+    <ng-container *ngIf="templateData.error">
+      <div class="alert-danger">
+        <h3>An error occurred!</h3>
+        <p> {{ templateData.error.errorMessage }}</p>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="templateData.data">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="naam-id">Naam</label>
+            </div>
+            <div class="col-md-15">
+              <span id="naam-id">{{templateData.data.naam === null ? '-' : templateData.data.naam}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="inlognaam-id">Loginnaam</label>
+            </div>
+            <div class="col-md-15">
+              <span id="inlognaam-id">{{templateData.data.inlognaam === null ? '-' : templateData.data.inlognaam}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="voornaam-id">Voornaam</label>
+            </div>
+            <div class="col-md-15">
+              <span id="voornaam-id">{{templateData.data.voornaam === null ? '-' : templateData.data.voornaam}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="achternaam-id">Achternaam</label>
+            </div>
+            <div class="col-md-15">
+              <span id="achternaam-id">{{templateData.data.achternaam === null ? '-' : templateData.data.achternaam}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="telefoonnummer-id">Telefoonnummer</label>
+            </div>
+            <div class="col-md-15">
+              <span id="telefoonnummer-id">{{templateData.data.telefoonnummer === null ? '-' : templateData.data.telefoonnummer}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-style">
+            <div class="col-md-3">
+              <label for="email-id">E-mail</label>
+            </div>
+            <div class="col-md-15">
+              <span id="email-id">{{templateData.data.email === null ? '-' : templateData.data.email}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</app-bkwi-panel>
+<app-bkwi-panel id="GenereerWachtwoordTitleId" panelTitle="Genereer wachtwoord">
+  <ng-container *ngIf="this.updateGeneratePasswordMessage$ | async as updateGeneratePasswordMessage">
+     <ng-container *ngIf="laatsteActieWasWachtwoordGeneratie === true && updateGeneratePasswordMessage.info">
+      <div class="alert-info">
+        <p> {{ updateGeneratePasswordMessage.info.infoGenerateMessage }}</p>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="laatsteActieWasWachtwoordGeneratie === true && updateGeneratePasswordMessage.error">
+      <div class="alert-danger">
+        <p> {{ updateGeneratePasswordMessage.error.errorMessage }}</p>
+      </div>
+    </ng-container>
+    <div class="form-group-submit">
+      <button id="genereer-wachtwoord" (click)="generatePassword()" type="submit" class="btn btn-primary font-weight-bold">Genereer wachtwoord</button>
+    </div>
+    <div class="row"><p></p></div>
+    <div class="row" *ngIf="laatsteActieWasWachtwoordGeneratie === true">
+      <div id="wachtwoord-is-gegenereerd" class="col-md-6">
+        <span style="font-weight:bold">Het volgende wachtwoord is gegenereerd en opgeslagen:&emsp;</span>{{ updateGeneratePasswordMessage.passwordDto?.password }}
+      </div>
+    </div>  
+  </ng-container>
+
+</app-bkwi-panel>
+
+<app-bkwi-panel id="WijzigWachtwoordTitleId" panelTitle="Handmatig wachtwoord">
+  <ng-container id="wachtwoord-form-id">
+        <ng-container *ngIf="this.updatePasswordMessage$ | async as updatePasswordMessage">
+          <ng-container *ngIf="laatsteActieWasWachtwoordGeneratie === false && updatePasswordMessage.info">
+            <div class="alert-info">
+              <p> {{ updatePasswordMessage.info.infoMessage }}</p>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="laatsteActieWasWachtwoordGeneratie === false && updatePasswordMessage.error">
+            <div class="alert-danger">
+              <p> {{ updatePasswordMessage.error.errorMessage }}</p>
+            </div>
+          </ng-container>
+
+        </ng-container>
+        <form [formGroup]="frmWijzigWachtwoord" (submit)="submit()">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row row-style">
+                <div class="col-md-4">
+                  <label for="wachtwoord-id" [ngClass]="frmWijzigWachtwoord.controls['wachtwoord'].invalid ? 'text-danger' : ''">Nieuw wachtwoord:</label>
+                </div>
+                <div class="col-md-5">
+                  <input id="wachtwoord-id" formControlName="wachtwoord" type="password">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row"><p></p></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row row-style">
+                <div class="col-md-4">
+                  <label for="bevestig-wachtwoord-id" [ngClass]="frmWijzigWachtwoord.controls['bevestigWachtwoord'].invalid ? 'text-danger' : ''">Bevestig nieuw wachtwoord:</label>
+                </div>
+                <div class="col-md-5">
+                  <input id="bevestig-wachtwoord-id" formControlName="bevestigWachtwoord" type="password">
+                  <label class="text-danger" *ngIf="frmWijzigWachtwoord.controls['bevestigWachtwoord'].hasError('mismatch')">
+              Wachtwoord komt niet overeen
+            </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"><p></p></div>
+          <div class="form-group-submit">
+            <button id="sla-wachtwoord-op" [disabled]="frmWijzigWachtwoord.invalid" type="submit" class="btn btn-primary font-weight-bold">Sla wachtwoord op</button>
+          </div>
+        </form>
+  </ng-container>
+</app-bkwi-panel>

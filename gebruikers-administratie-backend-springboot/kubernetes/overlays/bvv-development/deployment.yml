@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: $(PROJECT_IN_NAME)
+spec:
+  template:
+    spec:
+      containers:
+        - name: $(PROJECT)
+          env:
+            - name: gebruikers-administratie-api.uri
+              value: http://gebruikers-administratie-api:8080
+

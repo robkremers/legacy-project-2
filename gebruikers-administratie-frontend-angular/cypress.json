@@ -1,0 +1,22 @@
+{
+  "testFiles": [
+    "**/*.{feature,features}",
+    "**/*.spec.js"
+  ],
+  "viewportHeight": 768,
+  "viewportWidth": 1024,
+  "video": false,
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

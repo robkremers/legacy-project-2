@@ -1,0 +1,13 @@
+{
+    "env": {
+        "baseUrl": "http://localhost:4200",
+        "urlSuffix": "/home/",
+        "gebruikersViewSuffix": "/gebruikers-administratie/view/",
+        "gebruikersOverzichtSuffix": "/gebruikers-administratie/",
+        "ldapPort": 50389,
+        "ldapAdminDN": "cn=sa_useradmin,o=special,c=nl",
+        "ldapAdminPassword": "vagrant",
+        "ldapUserBaseDN": "o=suwi,c=nl",
+        "ldapDockerContainer": "inkijk_ldap_1"
+    }
+}

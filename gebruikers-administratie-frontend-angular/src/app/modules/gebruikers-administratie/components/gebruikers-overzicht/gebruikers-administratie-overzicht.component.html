@@ -1,0 +1,20 @@
+<app-bkwi-panel id="gebruikerspanelTitleId" panelTitle="Zoek-/bladerresultaat"
+                extraClassesForPanel="suwi-panel" extraClassesForPanelBody="table-panel-body">
+  <div class="mat-action-row">
+
+    <!--
+      Marnix: Ik besteed niet teveel tijd aan het implementeren van het nieuwe design van de gebruikersadministratie,
+      omdat iemand met goede frontend skills dat moet doen. Als ik het doe wordt het suboptimaal en ik denk ook dat
+      de custom.css eerst moet worden herzien.
+    -->
+
+
+      <a [href]="exportGebruikersURL" target="_blank">
+        <button class="btn btn-border" id="ExportGebruikersButtonId">
+          Export gebruikers
+        </button>
+      </a>
+
+  </div>
+  <app-gebruikers-table></app-gebruikers-table>
+</app-bkwi-panel>

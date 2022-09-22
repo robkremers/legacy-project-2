@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  ldap:
+    base: o=suwi,c=nl
+    hosts: localhost
+    port: 636
+    connectionPoolSize: 1
+    username: cn=sa_useradmin,o=special,c=nl
+    password: vagrant
+
+management:
+  endpoints:
+    cors:
+      allowed-origins: "http://localhost"
+      allowed-methods: "GET,POST"
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,loggers
+      base-path: /
+
+password:
+  length: 10

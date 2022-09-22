@@ -1,0 +1,42 @@
+[
+  {
+    "description": "    Ik wil test maken om te testen of de 8 menu items  staan in landingspagina",
+    "keyword": "Feature",
+    "name": "Testen of de 8 menu items van de landingspagina",
+    "line": 1,
+    "id": "testen-of-de-8-menu-items-van-de-landingspagina",
+    "tags": [],
+    "uri": "Landingspagina.feature",
+    "elements": [
+      {
+        "id": "testen-of-de-8-menu-items-van-de-landingspagina;landingspagina",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "landingspagina",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "ik open de home pagina",
+            "result": {
+              "status": "undefined",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "controleer ik hallo BKWI",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

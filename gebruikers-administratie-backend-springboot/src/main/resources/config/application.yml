@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+gebruikers-administratie-api:
+  uri: http://localhost:2021
+
+management:
+  endpoints:
+    cors:
+      allowed-origins: "http://localhost"
+      allowed-methods: "GET,POST"
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,loggers
+      base-path: /

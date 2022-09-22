@@ -1,0 +1,13 @@
+input.ng-invalid {
+    border:thin red solid;
+}
+
+input.ng-valid {
+    border:thin green solid;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}

@@ -1,0 +1,48 @@
+import {ComponentFixture, fakeAsync, TestBed, tick} from '@angular/core/testing';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {GebruikersTableComponent} from './gebruikers-table.component';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {GebruikersFrontendService} from "../../../../services/gebruikers-administratie-frontend.service";
+import {Observable} from "rxjs";
+import {IGebruikersTableMessage} from "../../gebruikers-administratie.types";
+
+fdescribe('GebruikersTableComponent', () => {
+  let component: GebruikersTableComponent;
+  let fixture: ComponentFixture<GebruikersTableComponent>;
+  let gebruikersFrontendService: GebruikersFrontendService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule, MatProgressBarModule],
+      declarations: [GebruikersTableComponent]
+    });
+    // Create component and test fixture.
+    fixture = TestBed.createComponent(GebruikersTableComponent);
+    // Get test component from the fixture.
+    component = fixture.componentInstance;
+    // gebruikersFrontendService provided to the TestBed.
+    gebruikersFrontendService = TestBed.inject(GebruikersFrontendService);
+
+  });
+
+  it('should create component', () => {
+    expect(component).toBeTruthy();
+  });
+
+  // it('should create gebruikersFrontendService', () => {
+  //   expect(gebruikersFrontendService).toBeTruthy();
+  // });
+
+  // it('animate should be turned off in case of a response', fakeAsync(() => {
+  //     expect(component.animate).toBe(true);
+  //     fixture.detectChanges();
+  //
+  //     spyOn(gebruikersFrontendService, 'getGebruikers').and.returnValue(new Observable<IGebruikersTableMessage>);
+  //     component.ngOnInit();
+  //     // Simulates the passage of time until all pending asynchronous activities complete
+  //     tick();
+  //     fixture.detectChanges();
+  //     expect(component.animate).toBe(false);
+  //   })
+  // );
+});

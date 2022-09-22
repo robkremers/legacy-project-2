@@ -1,0 +1,105 @@
+openapi: 3.0.3
+info:
+  title: Gebruikersadministratie API
+  description: In de API wordt de koppeling met ldap/opendj/openam gelegd om gebruikers te beheren.
+  version: '002'
+servers:
+  - url: http://localhost:2021
+    description: Generated server url
+paths:
+  /gebruikers/{uid}:
+    get:
+      tags:
+        - gebruiker-controller
+      operationId: getGebruiker
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: am_dn
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/GebruikerDTO'
+    put:
+      tags:
+        - gebruiker-controller
+      operationId: updateUserPassword
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: am_dn
+          in: header
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordDTO'
+      responses:
+        '200':
+          description: OK
+  /gebruikers:
+    get:
+      tags:
+        - gebruiker-controller
+      operationId: getGebruikers
+      parameters:
+        - name: am_dn
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GebruikerDTO'
+components:
+  schemas:
+    GebruikerDTO:
+      type: object
+      properties:
+        naam:
+          type: string
+        achternaam:
+          type: string
+        voornaam:
+          type: string
+        userId:
+          type: string
+        initialen:
+          type: string
+        email:
+          type: string
+        telefoonnummer:
+          type: string
+        afdeling:
+          type: string
+        employeeNr:
+          type: string
+    PasswordDTO:
+      type: object
+      properties:
+        password:
+          type: string
+          nullable: false

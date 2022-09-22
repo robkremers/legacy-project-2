@@ -1,0 +1,74 @@
+[
+  {
+    "naam": "DUO Gebruiker",
+    "inlognaam": "gebruiker_duo",
+    "achternaam": "Gebruiker",
+    "voornaam": "DUO",
+    "userId": "gebruiker_duo",
+    "initialen": null,
+    "email": "gebruiker_duo@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  },
+  {
+    "naam": "DUO Beheerder",
+    "inlognaam": "beheerder_duo",
+    "achternaam": "Beheerder",
+    "voornaam": "DUO",
+    "userId": "beheerder_duo",
+    "initialen": null,
+    "email": "beheerder_duo@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  },
+  {
+    "naam": "DUO Scraper",
+    "inlognaam": "scrape_duo",
+    "achternaam": "Scraper",
+    "voornaam": "DUO",
+    "userId": "scrape_duo",
+    "initialen": null,
+    "email": "scrape_duo@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  },
+  {
+    "naam": "DUO Alles",
+    "inlognaam": "duo",
+    "achternaam": "Alles",
+    "voornaam": "DUO",
+    "userId": "duo",
+    "initialen": null,
+    "email": "duo@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  },
+  {
+    "naam": "DUO FR1",
+    "inlognaam": "duo_fr1",
+    "achternaam": "FR1",
+    "voornaam": "DUO",
+    "userId": "duo_fr1",
+    "initialen": null,
+    "email": "duo_fr1@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  },
+  {
+    "naam": "DUO FR2",
+    "inlognaam": "duo_fr2",
+    "achternaam": "FR2",
+    "voornaam": "DUO",
+    "userId": "duo_fr2",
+    "initialen": null,
+    "email": "duo_fr2@bkwi.nl",
+    "telefoonnummer": null,
+    "afdeling": "afdeling",
+    "employeeNr": null
+  }
+]

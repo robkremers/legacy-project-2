@@ -1,0 +1,7 @@
+// zorg dat de menu items elkaar niet overlappen als het scherm kleiner wordt gemaakt.
+nav {
+  a {
+    display: inline-block;
+    margin-top: 2px;
+  }
+}

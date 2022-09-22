@@ -1,0 +1,55 @@
+<input type="button" onclick="topFunction()" id="myBtn" class="scroll-to-top" value="Terug naar boven"/>
+<header class="navbar-fixed-top">
+  <div class="container-fluid header">
+    <div class="row">
+      <div class="col-sm-6">
+        <a routerLink="/home" routerLinkActive="active">
+          <img class="navbar-brand" src="assets/images/Suwinet_PMS.png" alt="logo-suwinet"> <!--Alt tag WCAG 2.0 eis-->
+        </a>
+      </div>
+      <div class="login-container pull-right">
+        <div class="message-container">
+            <a href="#" class="messages" aria-label="notificaties">
+              <span class="fas fa-envelope" aria-hidden="true"></span>
+            </a>
+          </div>
+        <div class="logout" *ngIf="this.currentSystemUser$| async as usr">
+            <div class="dropdown">
+              <a class="dropdown-toggle " href="#" role="button" id="dropdownMenuLogin" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
+                 {{usr.naam}} <em class="fas fa-angle-down"></em>
+              </a>
+              <div class="dropdown-menu dropdown-menu-logout">
+                <a class="dropdown-item" href="#">Uitloggen</a>
+              </div>
+            </div>
+        </div>
+        <span class="last-login-text">Laatst ingelogd op 20-1-2022</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="col-sm-12 pull-right" id="main">
+  <div class="container-breadcrums-menu">
+    <div class="breadcrums">
+      <a class="breadcrumb-item active" href="index.html" aria-current="page">Gemeente: <em>Heerhugowaard - bread - crum</em></a>
+    </div>
+  </div>
+  <div class="content" role="main">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div id="footer" class="suwi-footer col-sm-12">
+    <a href="https://www.bkwi.nl/producten/suwinet-services/suwinet-inkijk/" target="_blank">
+      <img src="assets/images/footer@1x.png" alt="bkwi-logo">
+    </a>
+  </div>
+</footer>
+
+
+
+

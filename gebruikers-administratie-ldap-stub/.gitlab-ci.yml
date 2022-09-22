@@ -1,0 +1,4 @@
+include:
+  - project: "bkwi/beheer/infraops/ontwikkeltooling/gitlab-ci"
+    file: "gitlab-ci-yml/image-stub-deploy.yml"
+
